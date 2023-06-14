@@ -1,0 +1,25 @@
+{
+  "name": "tesla_cypress",
+  "version": "1.0.0",
+  "description": "Front-end automation for Tesla website using Cypress testing tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedmoheyeldin/tesla_cypress.git"
+  },
+  "author": "Mohamed Moheyeldin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedmoheyeldin/tesla_cypress/issues"
+  },
+  "homepage": "https://github.com/mohamedmoheyeldin/tesla_cypress#readme",
+  "devDependencies": {
+    "cypress": "^12.14.0",
+    "cypress-mochawesome-reporter": "^3.5.0"
+  }
+}
