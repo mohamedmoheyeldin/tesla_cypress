@@ -2,26 +2,33 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: 'https://www.tesla.com/',
-    "viewportHeight":1080,
-    "viewportWidth":1920,
-    "includeShadowDom": true,
-    "retries": 1,
-    "experimentalWebKitSupport": true,
-    "experimentalStudio": true,
-    "experimentalRunAllSpecs": true,
     reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
-      charts: true,
       reportPageTitle: 'Tesla Automation Report',
-      embeddedScreenshots: true,
+      charts: true,
+      quiet: false,
+      showPassed: true,
+      showFailed: true,
+      showSkipped: true,
       inlineAssets: true,
-      saveAllAttempts: false,
+      saveAllAttempts: true,
+      showTestDuration: true,
+      embeddedScreenshots: true
     },
 
 
     setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
     },
+
+    baseUrl: 'https://www.tesla.com/',
+    "viewportHeight":1080,
+    "viewportWidth":1920,
+    "retries": 1,
+    "experimentalWebKitSupport": true,
+    "experimentalRunAllSpecs": true,
+    "experimentalStudio": true,
+    "includeShadowDom": true,
+
   },
 });
