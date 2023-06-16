@@ -27,4 +27,4 @@ jobs:
           pull-requests: write
         if: always()
         with:
-        files: ./cypress\reports\html\index.html
+        files: ./cypress/reports/html/index.html
