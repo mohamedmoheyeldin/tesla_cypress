@@ -11,20 +11,10 @@
 
 
 
-$url = "https://api.github.com/repos/$repoFullName/check-runs"
-$hdr = @{
-Accept = 'application/vnd.github.antiope-preview+json'
-Authorization = "token $ghToken"
-}
-$bdy = @{
-name       = $report_name
-head_sha   = $ref
-status     = 'completed'
-conclusion = $conclusion
-output     = @{
-title   = $report_title
-summary = "This run completed at ``$([datetime]::Now)``"
-text    = $reportData
-}
-}
-Invoke-WebRequest -Headers $hdr $url -Method Post -Body ($bdy | ConvertTo-Json)
+
+
+
+---
+
+### :fire: My Stats :
+[![GitHub Streak](https://streak-stats.demolab.com?user=mohamedmoheyeldin&theme=dark)](https://git.io/streak-stats)
