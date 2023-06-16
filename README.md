@@ -12,4 +12,4 @@
 
 
 ## HTML Report
- [Report](cypress/reports/html/index.html)
+ [Report](https://mohamedmoheyeldin.github.io/tesla_cypress/cypress/reports/html/index.html)
