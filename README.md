@@ -7,6 +7,3 @@
 
 
 [![Cypress Tests](https://github.com/mohamedmoheyeldin/tesla_cypress/actions/workflows/cypress.yml/badge.svg)](https://github.com/mohamedmoheyeldin/tesla_cypress/actions/workflows/cypress.yml)
-
-
-#### [HTML Report](https://mohamedmoheyeldin.github.io/tesla_cypress/cypress/reports/html/index.html)
