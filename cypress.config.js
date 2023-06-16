@@ -22,13 +22,13 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     },
     baseUrl: 'https://www.tesla.com/',
-    "viewportHeight":1080,
-    "viewportWidth":1920,
-    "retries": 1,
-    "experimentalWebKitSupport": true,
-    "experimentalRunAllSpecs": true,
-    "experimentalStudio": true,
-    "includeShadowDom": true,
+    viewportHeight:1080,
+    viewportWidth:1920,
+    retries: 1,
+    experimentalWebKitSupport: true,
+    experimentalRunAllSpecs: true,
+    experimentalStudio: true,
+    includeShadowDom: true,
 
   },
 });
