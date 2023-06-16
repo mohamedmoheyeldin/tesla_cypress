@@ -13,6 +13,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         continue-on-error: true
-        with:
-          parallel: true # Runs test in parallel using settings above
 
