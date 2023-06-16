@@ -23,4 +23,4 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()
         with:
-          files: 'cypress/reports/html/index.html'
+          files: cypress/reports/html/index.html
