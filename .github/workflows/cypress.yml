@@ -15,11 +15,11 @@ jobs:
       - uses: actions/upload-artifact@v2
         continue-on-error: true
         if: failure()
-          with:
+        with:
             name: cypress-screenshots
             path: ./cypress/screenshots
-            - uses: actions/upload-artifact@v2
-              if: always()
-              with:
-                name: cypress HTML report
-                path: cypress/reports/html/index.html
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: cypress HTML report
+          path: cypress/reports/html/index.html
