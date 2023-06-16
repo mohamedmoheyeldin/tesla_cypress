@@ -14,13 +14,23 @@ jobs:
         uses: cypress-io/github-action@v5
         continue-on-error: true
         with:
-          record: true
           parallel: true # Runs test in parallel using settings above
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
-        if: always()
-        with:
-          files: cypress/reports/html/index.html
+      - name: Test Artifacts
+        steps:
+          - uses: actions/checkout@v2
+              - uses: cypress-io/github-action@v4
+              - uses: actions/upload-artifact@v2
+                if: failure()
+                with:
+                  name: cypress-screenshots
+                  path: ./cypress/screenshots
+              - uses: actions/upload-artifact@v2
+                if: always()
+                with:
+                  name: cypress HTML Report
+                  path: cypress/reports/html/index.html
+
+
