@@ -19,5 +19,5 @@ jobs:
       - uses: actions/upload-artifact@v3
         if: always()
         with:
-          name: cypress HTML report
-          path: cypress/reports/html/index.html
+          name: Cypress HTML report
+          path: cypress/reports/html
