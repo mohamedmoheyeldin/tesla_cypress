@@ -4,9 +4,7 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false 
-      matrix:
-        containers: [1, 2]
+      fail-fast: false
     steps:
       - name: Checkout
         uses: actions/checkout@v3
