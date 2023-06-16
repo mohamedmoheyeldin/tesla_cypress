@@ -15,6 +15,4 @@ jobs:
         continue-on-error: true
         with:
           parallel: true # Runs test in parallel using settings above
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
 
