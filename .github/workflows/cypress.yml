@@ -12,5 +12,14 @@ jobs:
         uses: actions/checkout@v3
       - name: Cypress run
         uses: cypress-io/github-action@v5
+      - uses: actions/upload-artifact@v2
         continue-on-error: true
-
+        if: failure()
+          with:
+            name: cypress-screenshots
+            path: ./cypress/screenshots
+            - uses: actions/upload-artifact@v2
+              if: always()
+              with:
+                name: cypress HTML report
+                path: cypress/reports/html/index.html
