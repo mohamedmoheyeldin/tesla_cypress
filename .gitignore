@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Custom directories
+cypress/downloads/
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
